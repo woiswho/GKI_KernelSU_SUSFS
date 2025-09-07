@@ -30,7 +30,7 @@ jobs:
   build-gki:
     runs-on: ubuntu-latest
     timeout-minutes: 120
-
+if: inputs.android_version == 'android12' && inputs.kernel_version == '5.10'
     steps:
       # # - name: Maximize Build Space
         # uses: AdityaGarg8/remove-unwanted-software@v5
